@@ -1,0 +1,17 @@
+package com.example.demo.restcontroller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+//@RequestMapping("/api")
+public class FreindController {
+
+	
+	@RequestMapping("/")
+	public String welcome() {
+		return "Hello from STS!!!!";
+	}
+	
+	
+}

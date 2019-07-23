@@ -1,0 +1,13 @@
+package com.example.demo.service;
+
+import com.example.demo.dao.FriendDao;
+
+public class FriendService {
+
+	private FriendDao friendDao;
+	
+	public void getAllFriends() {
+		friendDao.getAllFriends();
+	};
+
+}
