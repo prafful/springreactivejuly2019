@@ -16,5 +16,15 @@ public class FriendService {
 	
 	public List<FriendEntity> getAllFriends() {
 		return friendDao.getAllFriends();
+	}
+
+	public FriendEntity addFriend(FriendEntity fe) {
+		// TODO Auto-generated method stub
+		return friendDao.addFriend(fe);
+	}
+
+	public FriendEntity getFriendById(int id) {
+		// TODO Auto-generated method stub
+		return friendDao.getFriendById(id);
 	};
 }
