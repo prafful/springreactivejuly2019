@@ -25,6 +25,7 @@
 			<item value="org.eclipse.wst.jsdt.ui.java"/>
 			<item value="org.eclipse.pde.PDE"/>
 			<item value="org.eclipse.pde.userAssistance"/>
+			<item value="org.eclipse.wst.web.ui"/>
 		</list>
 	</section>
 </section>

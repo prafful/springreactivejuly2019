@@ -3,6 +3,8 @@ package com.springboot.person.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,14 +16,18 @@ import com.springboot.person.service.PersonService;
 
 @RestController
 @RequestMapping("api/v1")
+@RefreshScope
 public class PersonController {
 	
 	@Autowired
 	private PersonService personService;
 	
+	@Value("${welcome.message}")
+	private String message;
+	
 	@GetMapping("/message")
 	public String welcome() {
-		return "Hello from Person Microservice";
+		return message;
 	}
 	
 	@GetMapping("/all")

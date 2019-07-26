@@ -10,6 +10,8 @@
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="completion_proposal_size">
+		<item key="size.x" value="474"/>
+		<item key="size.y" value="244"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
@@ -19,5 +21,15 @@
 	<section name="NewClassWizardPage">
 		<item key="create_constructor" value="false"/>
 		<item key="create_unimplemented" value="true"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item key="width" value="600"/>
+		<item key="height" value="400"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="renameSubpackages" value="false"/>
+		<item key="updateTextualMatches" value="false"/>
+		<item key="updateQualifiedNames" value="false"/>
+		<item key="patterns" value="*"/>
 	</section>
 </section>
