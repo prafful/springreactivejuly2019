@@ -1,0 +1,15 @@
+server:
+  port: 8181
+  
+spring:  profiles:    active: dev---
+spring.profiles: dev
+spring:  data:    mongodb:      database: localdb         host: localhost
+      port: 27017
+---    
+spring.profiles: test
+spring:
+  data:
+    mongodb:
+      database: localdb   
+      host: localhost
+      port: 27017  
